@@ -61,3 +61,36 @@ const activeElemOnScroll = function () {
 }
 
 addEventOnElem(window, "scroll", activeElemOnScroll);
+/*
+* Products filter
+* */
+const radioButtons = document.querySelectorAll('input[name="animal"]');
+radioButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    if (this.value === "") {
+      radioButtons.forEach(btn => btn.checked = btn === this);
+    }
+  });
+});
+
+document.getElementById('filter-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const category = document.getElementById('category').value;
+  const products = document.querySelectorAll('.grid-list li');
+  const animal = document.querySelector('input[name="animal"]:checked')?.value;
+
+  products.forEach(product => {
+    const productCategory = product.getAttribute('data-category');
+    const productAnimal = product.getAttribute('data-animal');
+
+    if (
+        (category === '' || productCategory === category) &&
+        (!animal || productAnimal === animal)
+    ) {
+      product.style.display = 'block';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+});
