@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+      - primary meta tag
+    -->
+    <title>Shopping Cart</title>
+    <meta name="title" content="Kitter - Hight Quality Pet Food">
+    <meta name="description" content="This is an eCommerce html template made by codewithsadee">
+
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+    <link rel="stylesheet" href="../static/assets/css/payment.css">
+    <!--FOnt Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+            rel="stylesheet">
+
+    <!--
+      - preload images
+    -->
+    <link rel="preload" as="image" href="../static/assets/images/hero-banner.jpg">
+
+    <style>
+        .header{
+            background-color: orange !important;
+            margin-bottom: 50px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .header .navbar-link {
+            color: white;
+            transition: color 0.3s ease-in-out;
+        }
+        .footer {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body id="top">
+<!--
+- #HEADER
+-->
+<section class="header-section" style="margin-top: 10px;">
+    <header class="header" data-header>
+        <div class="container">
+
+            <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+            </button>
+
+            <a href="#" class="logo">Kitter</a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link" data-nav-link>Trang chủ</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#shop" class="navbar-link" data-nav-link>Cửa hàng</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>Về chúng tôi</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>Liên hệ</a>
+                    </li>
+
+                </ul>
+
+                <a href="#" class="navbar-action-btn">Log In</a>
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="action-btn" aria-label="Search">
+                    <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="action-btn user" aria-label="User">
+                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <a href="cart.html">
+                    <button class="action-btn" aria-label="cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="btn-badge">0</span>
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <br><br>
+</section>
+
+<!--Payment-->
+<section class="payment" style="margin-top: 30px;">
+    <div class="container">
+        <div class="payment-top-wrap">
+            <div class="payment-top">
+                <a href="cart.html" class="payment-top-cart payment-top-item">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="address.html" class="payment-top-address payment-top-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                </a>
+                <a href="payment.html" class="payment-top-payment payment-top-item">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="payment-content row">
+            <div class="payment-content-left">
+                <div class="payment-content-left-method-address">
+                    <p style="font-weight: bold;">Phương thức giao hàng</p>
+                    <div class="payment-content-left-method-address-item">
+                        <input type="radio">
+                        <label for="">Giao hàng chuyển phát nhanh</label>
+                    </div>
+                    <div class="payment-content-left-method-address-item">
+                        <input type="radio">
+                        <label for="">Giao hàng thường</label>
+                    </div>
+                    <div class="payment-content-left-method-payment">
+                        <p style="font-weight: bold;">Phương thức thanh toán</p>
+                        <div class="payment-content-left-method-payment-item">
+                            <input type="radio">
+                            <label for="">Thanh toán bằng thẻ tín dụng(OnePay)</label>
+                        </div>
+                        <div class="payment-content-left-method-payment-item-img">
+                            <img src="../static/assets/images/cong-thanh-toan-vnpay-va-cach-tich-hop-vao-website-wordpress.jpg" style="height: 100px; width: 100px;" alt="">
+                        </div>
+                        <div class="payment-content-left-method-payment-item">
+                            <input type="radio">
+                            <label for="">Thanh toán bằng Momo</label>
+                        </div>
+                        <div class="payment-content-left-method-payment-item-img">
+                            <img src="../static/assets/images/Vi-Momo.jpg" style="height: 100px; width: 100px;" alt="">
+                        </div>
+                        <div class="payment-content-left-method-payment-item">
+                            <input name="method-payment" type="radio">
+                            <label for="">Thanh toán bằng tiền mặt</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-content-right">
+                <div class="payment-content-right-button">
+                    <input type="text" placeholder="Mã giảm giá/Quà tặng">
+                    <button><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="payment-content-right-payment">
+            <button>TIẾP TỤC THANH TOÁN</button>
+        </div>
+    </div>
+
+</section>
+
+<!--
+  - #FOOTER
+-->
+<section class="footer-section" style="margin-top: 100px;">
+    <footer class="footer" style="background-image: url('../static/assets/images/footer-bg.jpg')">
+        <div class="footer-top section">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">Kitter</a>
+
+                    <p class="footer-text">
+                        If you have any question, please contact us at <a href="mailto:support@gmail.com"
+                                                                          class="link">support@gmail.com</a>
+                    </p>
+
+                    <ul class="contact-list">
+
+                        <li class="contact-item">
+                            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                            <address class="address">
+                                30 Buttonwood St.Pataskala OH 43062
+                            </address>
+                        </li>
+
+                        <li class="contact-item">
+                            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+                            <a href="tel:+16234567891011" class="contact-link">(+1)-6234-56-789-1011</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Corporate</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Careers</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Contact Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Vendors</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Affiliate Program</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Information</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Online Store</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Refund Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Shipping Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Track Order</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Services</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Grooming</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Positive Dog Training</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Veterinary Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Petco Insurance</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Pet Adoption</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Resource Center</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2022 Made with ♥ by <a href="#" class="copyright-link">codewithsadee.</a>
+                </p>
+
+                <img src="../static/assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method" class="img">
+
+            </div>
+        </div>
+
+    </footer>
+</section>
+<!--
+ - custom js link
+-->
+<script src="../static/assets/js/script.js" defer></script>
+
+<!--
+  - ionicon link
+-->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.js"></script>
+
+</body>
+</html>
