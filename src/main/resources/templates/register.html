@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+      - primary meta tag
+    -->
+    <title>ĐĂNG KÝ</title>
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="../static/assets/css/register.css">
+    <!--FOnt Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+            rel="stylesheet">
+
+    <!--
+      - preload images
+    -->
+    <link rel="preload" as="image" href="../static/assets/images/hero-banner.jpg">
+</head>
+<body>
+<form id="register-form">
+    <h1>Đăng Ký</h1>
+    <div class="group-form">
+        <label for="username">Tên đăng nhập:</label>
+        <input type="text" required id="userName"/>
+    </div>
+    <div class="group-form">
+        <label for="email">Email:</label>
+        <input type="email" required id="email"/>
+    </div>
+    <div class="group-form">
+        <label for="password">Mật khẩu:</label>
+        <input type="password" required id="password"/>
+    </div>
+    <div class="group-form">
+        <label for="confirmPassword">Nhập lại mật khẩu:</label>
+        <input type="password" required id="confirmPassword"/>
+    </div>
+    <div class="group-form">
+        <button type="submit">Đăng Ký</button>
+    </div>
+
+
+</form>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@latest/dist/ionic/ionic.js"></script>
+</body>
+</html>
