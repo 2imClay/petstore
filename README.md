@@ -37,22 +37,6 @@ Cơ sở dữ liệu:
 MySQL
 
 📂 Cấu trúc thư mục
-petstore/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── example/
-│   │   │           └── petstore/
-│   │   │               ├── controller/
-│   │   │               ├── model/
-│   │   │               ├── repository/
-│   │   │               └── service/
-│   │   └── resources/
-│   │       ├── static/
-│   │       └── templates/
-├── build.gradle
-├── settings.gradle
-└── README.md
+
 
 
