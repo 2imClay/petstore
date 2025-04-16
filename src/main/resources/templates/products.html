@@ -58,8 +58,9 @@
                 </li>
 
                 <li class="navbar-item">
-                    <a href="#shop" class="navbar-link" data-nav-link>Cửa hàng</a>
+                    <a href="products.html" class="navbar-link" data-nav-link>Cửa hàng</a>
                 </li>
+
                 <li class="navbar-item">
                     <a href="#" class="navbar-link" data-nav-link>Về chúng tôi</a>
                 </li>
@@ -70,20 +71,20 @@
 
             </ul>
 
-            <a href="#" class="navbar-action-btn">Log In</a>
+            <a href="#" class="navbar-action-btn">Đăng nhập</a>
         </nav>
 
         <div class="header-actions">
 
-            <button class="action-btn" aria-label="Search">
+            <button class="action-btn" aria-label="Search" onclick="window.location.href=''">
                 <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
             </button>
 
-            <button class="action-btn user" aria-label="User">
+            <button class="action-btn user" aria-label="User" onclick="window.location.href='login.html'">
                 <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
             </button>
 
-            <button class="action-btn" aria-label="cart">
+            <button class="action-btn" aria-label="cart" onclick="window.location.href='cart.html'">
                 <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
                 <span class="btn-badge">0</span>
@@ -169,18 +170,18 @@
   - #FOOTER
 -->
 
-<footer class="footer" style="background-image: url('../../../../../pet store old/petstore/src/main/resources/static/assets/images/footer-bg.jpg')">
+<footer class="footer" style="background-image: url('../static/assets/images/footer-bg.jpg')">
 
     <div class="footer-top section">
         <div class="container">
 
             <div class="footer-brand">
 
-                <a href="#" class="logo">3B</a>
+                <a href="#" class="logo">PetStore</a>
 
                 <p class="footer-text">
-                    Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi qua <a href="mailto:support@gmail.com"
-                                                                                         class="link">support@gmail.com</a>
+                    Liên lạc với chúng tôi nếu có thắc mắc <a href="mailto:support@gmail.com"
+                                                                     class="link">support@gmail.com</a>
                 </p>
 
                 <ul class="contact-list">
@@ -189,14 +190,14 @@
                         <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
 
                         <address class="address">
-                            63 Đường số 9, phường Trường Thọ, Thủ Đức, TP.HCM
+                            1 Đường số 1, phương Linh Trung, Thủ Đức, TP.HCM
                         </address>
                     </li>
 
                     <li class="contact-item">
                         <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
 
-                        <a href="tel:+16234567891011" class="contact-link">0123456789</a>
+                        <a href="tel:+16234567891011" class="contact-link">0123.456.789</a>
                     </li>
 
                 </ul>
@@ -234,14 +235,13 @@
             <ul class="footer-list">
 
                 <li>
-                    <p class="footer-list-title">Doanh nghiệp</p>
+                    <a href="#" class="footer-link">Về chúng tôi</a>
                 </li>
+
                 <li>
-                    <a href="#" class="footer-link">Về chúng tôi</a>
+                    <a href="#" class="footer-link">Liên hệ</a>
                 </li>
-                <li>
-                    <a href="#" class="footer-link">Liên hệ</a>
-                </li>
+
                 <li>
                     <a href="#" class="footer-link">FAQs</a>
                 </li>
@@ -253,24 +253,25 @@
                 <li>
                     <p class="footer-list-title">Thông tin</p>
                 </li>
+
                 <li>
-                    <a href="#" class="footer-link">Chính Sách Bảo Mật</a>
+                    <a href="#" class="footer-link">Trang chủ</a>
                 </li>
 
                 <li>
-                    <a href="#" class="footer-link">Chính Sách Hoàn Tiền</a>
+                    <a href="#" class="footer-link">Chính sách bảo mật</a>
                 </li>
 
                 <li>
-                    <a href="#" class="footer-link">Chính Sách Vận Chuyển</a>
+                    <a href="#" class="footer-link">Chính sách hoàn trả</a>
                 </li>
 
                 <li>
-                    <a href="#" class="footer-link">Điều Khoản Dịch Vụ</a>
+                    <a href="#" class="footer-link">Chính sách giao hàng</a>
                 </li>
 
                 <li>
-                    <a href="#" class="footer-link">Theo Dõi Đơn Hàng</a>
+                    <a href="#" class="footer-link">Điều khoản dịch vụ</a>
                 </li>
 
             </ul>
@@ -278,11 +279,19 @@
             <ul class="footer-list">
 
                 <li>
-                    <p class="footer-list-title">Dịch vụ</p>
+                    <p class="footer-list-title">Dịch vụ</p>
                 </li>
 
                 <li>
-                    <a href="#" class="footer-link">Dịch Vụ Thú Y</a>
+                    <a href="#" class="footer-link">Dịch vụ thú y</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Bảo hiểm</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Nhận nuôi thú cưng</a>
                 </li>
 
             </ul>
@@ -294,7 +303,7 @@
         <div class="container">
 
             <p class="copyright">
-                &copy; 2024 Made with ♥ by <a href="#" class="copyright-link">nnthanh.</a>
+                Trường Đại học Nông Lâm TP.HCM
             </p>
 
             <img src="../static/assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method" class="img">
