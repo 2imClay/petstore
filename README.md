@@ -2,11 +2,6 @@
 📌 Giới thiệu
 Dự án Website Bán Đồ Thú Cưng là một nền tảng thương mại điện tử chuyên cung cấp các sản phẩm và dịch vụ dành cho thú cưng như thức ăn, phụ kiện và các dịch vụ chăm sóc. Website hỗ trợ người dùng dễ dàng tìm kiếm sản phẩm, đặt hàng và thanh toán trực tuyến.
 
-👥 Thành viên nhóm
-Nguyễn Như Thanh - 21130539
-
-Võ Tấn Tài - 21130524
-
 🚀 Chức năng chính
 Frontend:
 Trang chủ với danh mục sản phẩm
